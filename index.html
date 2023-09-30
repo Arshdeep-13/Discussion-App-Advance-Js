@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discussion App | Advance Js</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="pageTitle">Discussion Portal</h1>
+    <div class="container">
+      <div class="left">
+        <div class="buttons-nav">
+          <button type="button">New Question form</button>
+          <input required
+            type="text"
+            id="question_search"
+            placeholder="search questions..."
+          />
+        </div>
+        <div class="space">
+          <!-- <h1 id="leftTitle">Title Topic</h1>
+            <p id="leftText">this is sample description</p> -->
+          <!-- <hr /> -->
+          <h2 id="spaceh2">No match found</h2>
+        </div>
+      </div>
+      <div class="right">
+        <div class="normalDiv">
+          <h1>Welcome to Discussion Portal !</h1>
+          <p>Enter a subject and question to get started</p>
+          <form id="formData">
+            <input required type="text" id="subject" placeholder="Subject" />
+            <textarea required
+              id="Question"
+              cols="75"
+              rows="10"
+              placeholder="Question"
+            ></textarea required>
+            <button type="button" id="formSubmit">Submit</button>
+          </form>
+        </div>
+        <div class="interactiveDiv">
+          <div class="question">
+            <h2 id="questionHeading">Question</h2>
+            <div class="inner">
+              <h2 id="questionTitle">Title Topic</h2>
+              <p id="questionText">this is sample description</p>
+            </div>
+            <div class="response-btn">
+              <button id="resolve">Resolve</button>
+              <button id="upvote">UpVote</i></button>
+              <button id="downvote">DownVote</button>
+            </div>
+          </div>
+          <div class="response">
+            <h2>Response</h2>
+            <div class="DivCollection"></div>
+          </div>
+          <div class="addResponse">
+            <h2>Add Response</h2>
+            <form id="responseData">
+              <input required type="text" id="responseName" placeholder="Enter Name" />
+              <textarea required
+                id="responseQuestion"
+                class="response-text"
+                cols="75"
+                rows="7"
+                placeholder="Enter Comment"
+              ></textarea required>
+              <button type="button" id="responseSubmit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9c69e7c0b6.js" crossorigin="anonymous"></script>
+  </body>
+</html>

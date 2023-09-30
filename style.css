@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 84vh;
+}
+h1#pageTitle {
+  padding: 3vh 0;
+  background: rgb(8, 143, 143);
+  color: white;
+}
+.left {
+  width: 45%;
+  /* background-color: antiquewhite; */
+  border: 1px solid rgba(0, 0, 0, 0.357);
+}
+.left .space {
+  background-color: rgba(222, 221, 221, 0.782);
+  height: 69vh;
+  text-align: start;
+  padding: 0 0 0 1.5vw;
+  overflow-y: scroll;
+}
+.left .space::-webkit-scrollbar {
+  display: none;
+}
+.left .space h1 {
+  background: none;
+  color: black;
+  padding: 3vh 0 0 0;
+}
+.left .space p {
+  padding: 2vh 0;
+}
+.left .space hr {
+  margin-left: -2vw;
+}
+.left .buttons-nav {
+  padding: 4vh 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.left .buttons-nav button {
+  padding: 0.7vw;
+  font-size: 1.1vw;
+  background-color: rgb(96, 96, 250);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.left .buttons-nav button:hover {
+  box-shadow: 0px 0px 5px 2px aqua;
+}
+
+.left .buttons-nav input {
+  padding: 0 1vw;
+  font-size: 1.1vw;
+}
+.right {
+  width: 55%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 0 0 0 3vw;
+}
+.right h1 {
+  background: none;
+  color: black;
+  padding: 4vh 0 0 0;
+}
+.right p {
+  padding: 1vh 0;
+}
+.right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2vh;
+}
+.right form input {
+  padding: 1vh;
+}
+.right form textarea {
+  padding: 1vh;
+  margin: 1vh 0;
+}
+.right form button {
+  padding: 0.7vw;
+  font-size: 1.1vw;
+  background-color: rgb(96, 96, 250);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.right form button:hover {
+  box-shadow: 0px 0px 5px 2px aqua;
+}
+div .question {
+  /* border: 2px solid red; */
+  margin: 3vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.question .inner {
+  background: rgba(222, 221, 221, 0.782);
+  width: 47vw;
+  padding: 1vw;
+  margin: 1vw 0;
+}
+.question #resolve {
+  padding: 0.7vw;
+  font-size: 1.1vw;
+  background-color: rgb(96, 96, 250);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.question #resolve:hover {
+  box-shadow: 0px 0px 5px 2px aqua;
+}
+.question #upvote {
+  padding: 0.7vw;
+  font-size: 1.1vw;
+  background-color: rgb(96, 96, 250);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.question #upvote:hover {
+  box-shadow: 0px 0px 5px 2px aqua;
+}
+.question #downvote {
+  padding: 0.7vw;
+  font-size: 1.1vw;
+  background-color: rgb(96, 96, 250);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.question #downvote:hover {
+  box-shadow: 0px 0px 5px 2px aqua;
+}
+.response h2 {
+  margin: 4vh 0 1vw 0;
+}
+.response-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+}
+.addResponse #responseData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2vh;
+}
+.addResponse #responseData form input {
+  padding: 1vh;
+}
+.addResponse #responseData form textarea {
+  padding: 1vh;
+  margin: 1vh 0;
+}
+.interactiveDiv {
+  display: none;
+}
+.DivCollection {
+  overflow-y: scroll;
+  height: 20vh;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  padding: 0vw 2vw;
+  width: 45vw;
+}
+#spaceh2 {
+  display: none;
+}
+
+@media screen and (max-width: 935px) {
+  .container {
+    flex-wrap: wrap;
+    height: 120vh;
+  }
+  .left {
+    width: -webkit-fill-available;
+  }
+  .right {
+    width: -webkit-fill-available;
+    text-align: center;
+  }
+  .right form textarea {
+    width: -webkit-fill-available;
+  }
+  .left .space {
+    height: 20vh;
+  }
+  .left .buttons-nav button {
+    padding: 1.7vw;
+    font-size: 3.1vw;
+  }
+  .right form button {
+    padding: 1.7vw;
+    font-size: 3.1vw;
+  }
+  .left .buttons-nav input {
+    font-size: 3.1vw;
+  }
+  body {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  }
+  .normalDiv {
+    padding: 0 3vw;
+    border: 1px solid black;
+    margin: 0 4vw;
+  }
+  input,
+  textarea {
+    border: 1px solid black;
+  }
+  div .question {
+    align-items: center;
+    justify-content: center;
+  }
+  .question .inner {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw 0;
+  }
+  .question #resolve {
+    padding: 1.7vw;
+    font-size: 3.1vw;
+  }
+  .question #upvote {
+    padding: 1.7vw;
+    font-size: 3.1vw;
+  }
+  .question #downvote {
+    padding: 1.7vw;
+    font-size: 3.1vw;
+  }
+  .response-btn {
+    width: auto;
+  }
+  .response {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  textarea#responseQuestion.response-text{
+    width: 80vw;
+}
+}
